@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <title>Web-Dev dla opornych</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Konrad Kowalik">
+        <meta name="description" content="Strona edukacyjna ZSE, w temacie tworzenia stron internetowych.">
+        <meta name="keywords" content="zse, www, edu, tssi, aplikacje klienckie, html, css, js, php">
+        <link rel="stylesheet" href="substyle.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+    <body>
+        <label><input type="checkbox">
+        <header>
+            <img src="img/Logo.png" alt="Logo">
+            <nav>
+                <div class="button">
+                    <a href="index.html">Strona główna</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="html.html">HTML</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="css.html">CSS</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="js.html">Js</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="php.html">PHP</a><div></div>
+                </div>
+            </nav>
+        </header>
+        </label>
+        <main>
+            <h3>Js</h3>
+            <h1>Podstawowe zagadnienia</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4><span>var</span> nazwa_zmiennej</h4>
+                        <br>
+                        <h4><span>let</span> nazwa_zmiennej</h4>
+                    </div>
+                    <div>
+                        <p>Deklaracja zmiennej.</p>
+                        <p>Zmienne deklarowane typem <span>var</span> działają między klamrami funkcji, w jakiej zostały zadeklarowane, oraz każdej istrukcji zawartej w tej funkcji.</p>
+                        <p>Zmienne deklarowane typem <span>let</span> działają między klamrami instrucki, w jakiej zostały zadeklarowane, nie wliczając nadrzędnych i podrzędnych instrukcji.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4><span>var</span> nazwa_tablicy = <span>new</span> Array(nr)</h4>
+                        <h4><span>var</span> nazwa_tablicy = <span>new</span> Array(e1, e2, e3, ...)</h4>
+                        <br>
+                        <h4><span>var</span> nazwa_tablicy = [e1, e2, e3, ...]</h4>
+                        <br>
+                        <h4>nazwa_tablicy[] = wartość</h4>
+                    </div>
+                    <div>
+                        <p>Deklaracja tablicy.</p>
+                        <p>Między nawiasami podajemy ilość elementów, albo wartości przechowywane w tablicy.</p>
+                        <p>Przypisując wartość do elementu tablicy lub wywołując go, w nawiasach kwadratowych, podajemy index danego elementu (pierwszy element posiada index 0).</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>document</h4>
+                        <br>
+                        <h4>document.write()</h4>
+                    </div>
+                    <div>
+                        <p>Obiekt pozwalający modyfikowanie dokumentu html.</p>
+                        <p><span>document.write()</span> wypisuje na stronie podaną treść. Wywołanie tej metody nie nadpisuje poprzedniej treści.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>document.getElementById()</h4>
+                        <br>
+                        <h4>document.getElementById().innerHTML = wartość;</h4>
+                        <h4>document.getElementById().innerHTML += wartość;</h4>
+                    </div>
+                    <div>
+                        <p><span>document.getElementById()</span> znajduje element o podanym w nawiasie ID i go "chwyta".</p>
+                        <p><span>document.getElementById().innerHTML</span> zmienia kod html danego elementu na stronie.</p>
+                        <p>Użycie samego znaku <span>=</span> nadpisze poprzednią wartość, aby dodać fragment kodu, należy użyć znaku <span>+=</span> przed wpisaniem wartości.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>function()</h4>
+                        <h4>{</h4>
+                        <h5>...</h5>
+                        <h5>// return x;</h5>
+                        <h4>}</h4>
+                    </div>
+                    <div>
+                        <p>Deklaracja funkcji.</p>
+                        <p>Jeśli nie napiszemy <span>return x;</span> funkcja przyjmie typ <span>void</span>. W przeciwnym wypadku przyjmie typ zwracanej wartości.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>window.onload = nazwa_funkcji</h4>
+                    </div>
+                    <div>
+                        <p>Wywołuje funkcję natychmiast po załadowaniu strony.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>// komentarz liniowy</h4>
+                    </div>
+                    <div>
+                        <p>Ukrywa w komentarzu daną linię kodu.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>/* komentarz wieloliniowy,</h4>
+                        <h4>komentarz blokowy */</h4>
+                    </div>
+                    <div>
+                        <p>Ukrywa w komentarzu wybrany fragment kodu.</p>
+                    </div>
+                </article>
+            </section>
+            <h3>Js</h3>
+            <h1>Okna dialogowe</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>alert()</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla komunikat na stronie o treści, podanej w nawiasach.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>prompt ( " ", nazwa_zmiennej )</h4>
+                        <br>
+                        <h4>var x = prompt ( " " )</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla komunikat z polem tekstowym, następnie zapisuje wprowadzoną do niego wartość.</p>
+                        <p><span>prompt()</span> posiada dwa argumenty. Pierwszy to tekst wyświetlany w oknie, natomiast drugi to nazwa zmiennej, w której zostanie przechowana odpowiedź.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>confirm( " " )</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla komunikat podany w nawiasach i zwraca wartość <span>TRUE</span>, albo <span>FALSE</span>.</p>
+                    </div>
+                </article>
+            </section>
+            <h3>Js</h3>
+            <h1>Zmienne tekstowe</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4><span>var</span> nazwa = " string ";</h4>
+                        <br>
+                        <h4><span>var</span> nazwa = " Ala ma kota ";</h4>
+                    </div>
+                    <div>
+                        <p>Deklaracja zmiennej tekstowej (string).</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.length</h4>
+                    </div>
+                    <div>
+                        <p>Zwraca długość tekstu przechowywanego w danej zmiennej.</p>
+                        <p>Liczy też odstępy między słowami (spacje)!</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.charAt ()</h4>
+                    </div>
+                    <div>
+                        <p>Zwraca znak, o podanym między nawiasami indeksie.</p>
+                        <p>Pierwszy znak ma indeks 0!</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.indexOf ()</h4>
+                        <br>
+                        <h4>nazwa.lastIndexOf ()</h4>
+                    </div>
+                    <div>
+                        <p>Zwraca indeks pierwszy lub ostatni (<span>.lastIndexOf</span>) podanego, między nawiasami, znaku.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.slice(index, n)</h4>
+                    </div>
+                    <div>
+                        <p>"Wycina" fragment tekstu ze zmiennej.</p>
+                        <p>Pierwszy argument informuje, od którego indeksu zaczyna się fragment.</p>
+                        <p>Drugi argument informuje, ile znaków wyciąć (a nie do którego indeksu!).</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.toUpperCase()</h4>
+                    </div>
+                    <div>
+                        <p>Zmienia wielkość liter, w danej zmiennej, na wielkie.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.toLowerCase()</h4>
+                    </div>
+                    <div>
+                        <p>Zmienia wielkość liter, w danej zmiennej, na małe.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.fontcolor()</h4>
+                        <br>
+                        <h4>nazwa.fontcolor("green")</h4>
+                    </div>
+                    <div>
+                        <p>Zmienia kolor czcionki dla tekstu danej zmiennej, na podany między nawiasami.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>nazwa.bold()</h4>
+                    </div>
+                    <div>
+                        <p>Pogrubia czcionkę dla tekstu danej zmiennej.</p>
+                    </div>
+                </article>
+            </section>
+            <h3>Js</h3>
+            <h1>Pętle</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>for (<span>var</span> i=0; i&lt;10; i++)</h4>
+                        <h4>{</h4>
+                        <h5>...</h5>
+                        <h4>}</h4>
+                        <br>
+                        <h4>for ( ; ; )</h4>
+                        <h4>{</h4>
+                        <h5>...</h5>
+                        <h4>}</h4>
+                    </div>
+                    <div>
+                        <p>Deklaracja pętli <span>for</span>.</p>
+                        <p>Pierwszy argument pętli informuje od jakiej wartości rozpoczyna się pętla.</p>
+                        <p>Dopóki drugie wyrażenie jest prawdziwe, pętla będzie się wykonywać.</p>
+                        <p>Trzeci argument pętli informuje o modyfikacji zmiennej w każdym cyklu pętli.</p>
+                        <p>W przypadku wpisania dwóch średników, między nawiasami, tworzy się nieskończona pętla.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>while ( )</h4>
+                        <h4>{</h4>
+                        <h5>...</h5>
+                        <h4>}</h4>
+                    </div>
+                    <div>
+                        <p>Deklaracja pętli <span>while</span>.</p>
+                        <p>Pętla będzie się wykonywać dopóki wyrażenie między nawiasami będzie prawdziwe.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>do</h4>
+                        <h4>{</h4>
+                        <h5>...</h5>
+                        <h4>}</h4>
+                        <h4>while ( )</h4>
+                    </div>
+                    <div>
+                        <p>Deklaracja pętli <span>do_while</span>.</p>
+                        <p>Od pętli <span>while</span>, różni się tylko tym, że kod pomiędzy klamrami wykona się przynajmniej raz.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

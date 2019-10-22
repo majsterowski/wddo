@@ -1,0 +1,294 @@
+/*=================================    TOOLS & OTHERS    =================================*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 100vw;
+    min-height: 100vh;
+    
+    font-family: Helvetica, sans-serif;
+    
+    overflow-x: hidden;
+    background-color: #282828;
+    color: #fff;
+}
+
+#cleaner
+{
+    clear: both;
+}
+
+
+/*=================================    HEADER    =================================*/
+
+label > input
+{
+    display: none;
+}
+
+label > input:checked + header > nav
+{
+    visibility: visible;
+}
+
+label > input:checked + header > nav > .button
+{
+    display: block;
+}
+
+header
+{
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+    
+    width: 15vw;
+    height: 12vh;
+    
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+header:hover
+{
+    cursor: pointer;
+}
+
+header > img
+{
+    width: 100%;
+    box-shadow: 0px 0px 5px 1.5px #111;
+}
+
+header > nav
+{
+    visibility: hidden;
+    
+    position: fixed;
+    top: 14vh;
+    left: 1vh;
+    
+    width: 15vw;
+    height: 37vh;
+    
+    box-shadow: 0px 0px 5px 1.5px #111;
+}
+
+header > nav > .button
+{
+    display: none;
+    
+    width: 15vw;
+    height: 5vh;
+    margin: 2vh 0;
+    
+    text-align: center;
+    line-height: 5vh;
+    
+/*    border-right: 5px solid #1abc9c;*/
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header > nav > .button > a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    text-decoration: none;
+    color: #fff;
+}
+
+header > nav > .button:nth-child(1) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 14.75vw;
+    
+    width: 15vw;
+    height: 100%;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(2) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 14.75vw;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(3) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 14.75vw;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(4) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 14.75vw;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(5) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 14.75vw;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:hover
+{
+    cursor: pointer;
+}
+
+header > nav > .button:hover > div
+{
+    left: 0;
+}
+
+
+/*=================================    MAIN    =================================*/
+
+
+main
+{
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-right: 5vw;
+    
+    width: 75vw;
+    min-height: 86vh;
+}
+
+main > h3
+{
+    text-align: center;
+    color: #1abc9c;
+}
+
+main > h1
+{
+    text-align: center;
+}
+
+main > section
+{
+    width: 100%;
+    min-height: 25vh;
+    margin: 10vh auto 5vh;
+    padding: 2vh 1vw;
+}
+
+main > section > article
+{
+    width: 90%;
+    min-height: 10vh;
+    margin: 0 auto 5vh;
+    
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 1px #111;
+    box-sizing: border-box;
+}
+
+main > section > article > div:nth-child(1)
+{
+    width: 50%;
+    min-height: 8vh;
+    margin: 1vh 0;
+    padding: 2vh 1vw;
+    
+    color: #a29bfe;
+    
+    float: left;
+    box-sizing: border-box;
+}
+
+main > section > article > div:nth-child(1) > h5
+{
+    margin-left: 1vw;
+}
+
+main > section > article > div:nth-child(1) > h4 > span
+{
+    color: #9b59b6;
+}
+
+main > section > article > div:nth-child(2)
+{
+    width: 50%;
+    min-height: 8vh;
+    margin: 1vh 0;
+    padding: 2vh 1vw;
+    
+    font-size: 0.9em;
+    
+    border-left: 2px solid #181818;
+    box-sizing: border-box;
+    float: right;
+}
+
+main > section > article > div:nth-child(2) > p
+{
+    margin: 0 0 2vh;
+}
+
+main > section > article > div:nth-child(2) > p > span
+{
+    color: #a29bfe;
+}
+
+
+/*=================================    FOOTER    =================================*/
+
+
+footer
+{
+    width: 100vw;
+    min-height: 5vh;
+    max-height: 25vh;
+    
+    background-color: #151515;
+}

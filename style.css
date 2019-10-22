@@ -1,0 +1,253 @@
+/*=================================    TOOLS & OTHERS    =================================*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Helvetica, sans-serif;
+    
+    background-color: #282828;
+    color: #fff;
+}
+
+
+/*=================================    HEADER    =================================*/
+
+label > input
+{
+    display: none;
+}
+
+label > input:checked + header > nav
+{
+    visibility: visible;
+}
+
+label > input:checked + header > nav > .button
+{
+    display: block;
+}
+
+header
+{
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+    
+    width: 15vw;
+    height: 12vh;
+    
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+header:hover
+{
+    cursor: pointer;
+}
+
+header > img
+{
+    width: 100%;
+    box-shadow: 0px 0px 5px 1.5px #111;
+}
+
+header > nav
+{
+    visibility: hidden;
+    
+    position: fixed;
+    top: 14vh;
+    left: 1vh;
+    
+    width: 15vw;
+    height: 37vh;
+    
+    box-shadow: 0px 0px 5px 1.5px #111;
+}
+
+header > nav > .button
+{
+    display: none;
+    
+    width: 15vw;
+    height: 5vh;
+    margin: 2vh 0;
+    
+    text-align: center;
+    line-height: 5vh;
+    
+/*    border-right: 5px solid #1abc9c;*/
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header > nav > .button > a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    text-decoration: none;
+    color: #fff;
+}
+
+header > nav > .button:nth-child(1) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 29.5vh;
+    
+    width: 15vw;
+    height: 100%;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(2) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 29.5vh;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(3) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 29.5vh;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(4) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 29.5vh;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:nth-child(5) > div
+{
+    position: relative;
+    top: -5vh;
+    left: 29.5vh;
+    
+    width: 15vw;
+    height: 5vh;
+    
+    background-color: #1abc9c;
+    z-index: -1;
+    
+    transition: .2s ease-in-out;
+}
+
+header > nav > .button:hover
+{
+    cursor: pointer;
+}
+
+header > nav > .button:hover > div
+{
+    left: 0;
+}
+
+
+/*=================================    MAIN    =================================*/
+
+
+main
+{
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    
+    width: 75vw;
+    height: 86vh;
+}
+
+main > h3
+{
+    text-align: center;
+    color: #1abc9c;
+}
+
+main > h1
+{
+    text-align: center;
+}
+
+main > section
+{
+    width: 100%;
+    height: 65vh;
+    margin: 10vh auto 0;
+    box-shadow: 0px 0px 10px 1.5px #111;
+}
+
+main > section > article
+{
+    width: 90%;
+    min-height: 10vh;
+    margin: auto;
+    padding: 5vh 1vw;
+    
+    box-sizing: border-box;
+}
+
+main > section > article > h4
+{
+    display: block;
+    margin: 0 auto 4vh;
+    
+    color: #a29bfe;
+}
+
+main > section > article > p
+{
+    display: block;
+    margin-top: 2vh;
+}
+
+
+/*=================================    FOOTER    =================================*/
+
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    
+    width: 100vw;
+    height: 4vh;
+    
+    background-color: #151515;
+}

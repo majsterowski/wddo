@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <title>Web-Dev dla opornych</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Konrad Kowalik">
+        <meta name="description" content="Strona edukacyjna ZSE, w temacie tworzenia stron internetowych.">
+        <meta name="keywords" content="zse, www, edu, tssi, aplikacje klienckie, html, css, js, php">
+        <link rel="stylesheet" href="substyle.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+    <body>
+        <label><input type="checkbox">
+        <header>
+            <img src="img/Logo.png" alt="Logo">
+            <nav>
+                <div class="button">
+                    <a href="index.html">Strona główna</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="html.html">HTML</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="css.html">CSS</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="js.html">Js</a><div></div>
+                </div>
+                <div class="button">
+                    <a href="php.html">PHP</a><div></div>
+                </div>
+            </nav>
+        </header>
+        </label>
+        <main>
+            <h3>HTML</h3>
+            <h1>Podstawowe znaczniki html</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>&lt;!DOCTYPE HTML&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Informuje przeglądarkę o wykorzystaniu HTML5 na stronie.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;html lang = "pl"&gt; &lt;/html&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Rozpoczyna kod html.</p>
+                        <p>Atrybut <span>lang</span> informuje o języku na stronie.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;head&gt; &lt;/head&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Zawiera elementy informacyjne, niewidoczne na stronie.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;script&gt; &lt;/script&gt;</h4>
+                        <h4>&lt;script src = "code.js"&gt; &lt;/script&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Zapisuje się w nim linie skryptu.</p>
+                        <p>Z atrybutem <span>src</span> może też służyć do podpięcia pliku zewnętrznego.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;body&gt; &lt;/body&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Zawiera elementy widoczne na stronie.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;div&gt; &lt;/div&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Element blokowy, mogący przechowywać inne elementy na stronie.</p>
+                        <p>Posiada fizyczne wymiary, takie jak szerokość i wysokość.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;span&gt; &lt;/span&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Element separujący, który nie posiada fizycznych wymiarów i dlatego nie ingeruje w układ elementów blokowych na stronie.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;a&gt; Tekst wyświetlany jako link &lt;/a&gt;</h4>
+                        <h4>&lt;a href="plik/adres"&gt; &lt;/a&gt;</h4>
+                        <h4>&lt;a href="#"&gt; &lt;/a&gt;</h4>
+                        <h4>&lt;a href="# ID"&gt; &lt;/a&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Znacznik hiperłącza.</p>
+                        <p>Do atrybutu <span>href</span> wpisujemy adres docelowy.</p><p>Zamiast adresu można podać <span>#</span>, co spowoduje powrócenie do góry strony.</p>
+                        <p>Można także podać ID znacznika poprzedzony <span>#</span>.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;h1&gt; Największy tekst nagłówkowy &lt;/h1&gt;</h4>
+                        <h4>...</h4>
+                        <h4>&lt;h6&gt; Najmniejszy tekst nagłówkowy &lt;/h6&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Znacznik nagłówna.</p>
+                        <p>Tekst zamknięty w środku będzie miał większy rozmiar niż zwyczajny tekst i będzie on malał wraz ze zwiększaniem się cyfry w znaczniku.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;p&gt; Treść akapitu &lt;/p&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Akapit tekstu.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;img src = "image.png" alt = "Image"&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Znakcznik obrazu.</p>
+                        <p>Do atrybutu <span>src</span> wpisujemy scieżkę do pliku. Natomiast w atrybucie <span>alt</span> ustawiamy tekst, wyświetlany, gdy nie będzie można załadować obrazu.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;br&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Znacznik końca linii.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;i&gt; &lt;/i&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Znacznik kursywy.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;b&gt; &lt;/b&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Znacznik pogrubiający czcionkę.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;!-- treść konentarza --&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Ukrywa w komentarzu fragment kodu</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+            </section>
+            <h3>HEAD</h3>
+            <h1>Metainformacje</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>&lt;meta charset = "utf-8"&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Ustawia kodowanie znaków.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;meta name = "author" content = "Zyzio Dyzio"&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Podaje informacje o autorze strony.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;meta name = "description" content = "Krótki opis strony"&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Zawiera opis strony, wyświetlany w wyszukiwarce.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;meta name = "keywords" content = "naj, strona, ever"&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Zawiera słowa kluczowe, pomagające w pozycjonowaniu strony w wyszukiwarce.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;title&gt; &lt;/title&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Tytuł wyświetlany na górze karty, obok faviconu.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;link rel = "stylesheet" href = "style.css"&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Podpina arkusz stylów do strony.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;link rel = "icon" href = "favicon.png"&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Ustawia małą ikonę przy tytule strony.</p>
+                    </div>
+                    <span id="cleaner"></span>
+                </article>
+            </section>
+            <h3>BODY</h3>
+            <h1>HEADER</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>&lt;header&gt; &lt;/header&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Opisuje nagłówek, widoczny na stronie.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;nav&gt; &lt;/nav&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Służy do opisywania nawigacji (menu) strony.</p>
+                    </div>
+                </article>
+            </section>
+            <h3>BODY</h3>
+            <h1>MAIN</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>&lt;main&gt; &lt;/main&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Opisuje główny element strony.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;section&gt; &lt;/section&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Używany jest do dzinelenia elementu <span>main</span> na mniejsze sekcje.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&lt;article&gt; &lt;/article&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Używany jest do dzinelenia elementu <span>main</span> lub <span>section</span> na mniejsze sekcje.</p>
+                    </div>
+                </article>
+            </section>
+            <h3>BODY</h3>
+            <h1>FOOTER</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>&lt;footer&gt; &lt;/footer&gt;</h4>
+                    </div>
+                    <div>
+                        <p>Opisuje stopke na stronie.</p>
+                    </div>
+                </article>
+            </section>
+            <h3>HTML</h3>
+            <h1>Znaki specjalne</h1>
+            <section>
+                <article>
+                    <div>
+                        <h4>&amp;quot;</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla znak <span>&quot;</span>.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&amp;amp;</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla znak <span>&amp;</span>.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&amp;lt;</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla znak <span>&lt;</span>.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&amp;gt;</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla znak <span>&gt;</span>.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&amp;copy;</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla znak <span>&copy;</span> (copyright).</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h4>&amp;reg;</h4>
+                    </div>
+                    <div>
+                        <p>Wyświetla znak <span>&reg;</span> (zarejstrowany znak handlowy).</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
